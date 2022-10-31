@@ -2,6 +2,9 @@
 
 For those who wish to use the [Google Cloud DNS API](https://github.com/acmesh-official/acme.sh/wiki/dnsapi#49-use-google-cloud-dns-api-to-automatically-issue-cert) with [acme.sh](https://github.com/acmesh-official/acme.sh) running in a container environment, this is the container for you. This creates a Docker image with [Google Cloud SDK](https://cloud.google.com/sdk/) and [acme.sh](https://github.com/acmesh-official/acme.sh) installed and running on [Alpine Linux](https://hub.docker.com/_/alpine/). It is published for 32- and 64-bit `x86` and `ARM` architectures and, for those who use [Docker Swarm](https://docs.docker.com/engine/swarm/), it supports [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/jmcombs/acme.sh-gcloud)](https://hub.docker.com/r/jmcombs/acme.sh-gcloud "Click to view the image on Docker Hub")
+[![Docker Stars](https://img.shields.io/docker/stars/jmcombs/acme.sh-gcloud)](https://hub.docker.com/r/jmcombs/acme.sh-gcloud "Click to view the image on Docker Hub")
+
 ## How to Use
 
 This container supports both: [Authorize with a service account](https://cloud.google.com/sdk/docs/authorizing#authorize_with_a_service_account) and [Authorize with a user account](https://cloud.google.com/sdk/docs/authorizing#run_gcloud_init).
@@ -242,3 +245,7 @@ This container supports both: [Authorize with a service account](https://cloud.g
    ```
 
    **NOTE:** The Active Configuration for the Google Cloud SDK will be **`default`**. Changing to, and using a different Active Configuration, is out of scope for this documentation and not necessary. Advanced users can change this, if preferred.
+
+#### **Backlog**
+
+1. Automating Docker Image builds when releases are pushed to either `acme.sh` or Google Cloud SDK repos
