@@ -5,6 +5,8 @@ For those who wish to use the [Google Cloud DNS API](https://github.com/acmesh-o
 [![Docker Pulls](https://img.shields.io/docker/pulls/jmcombs/acme.sh-gcloud)](https://hub.docker.com/r/jmcombs/acme.sh-gcloud "Click to view the image on Docker Hub")
 [![Docker Stars](https://img.shields.io/docker/stars/jmcombs/acme.sh-gcloud)](https://hub.docker.com/r/jmcombs/acme.sh-gcloud "Click to view the image on Docker Hub")
 
+[![Github Issues](https://img.shields.io/github/issues/jmcombs/acme.sh-gcloud)](https://github.com/jmcombs/acme.sh-gcloud/issues "Click to view or open issues")
+
 ## How to Use
 
 This container supports both: [Authorize with a service account](https://cloud.google.com/sdk/docs/authorizing#authorize_with_a_service_account) and [Authorize with a user account](https://cloud.google.com/sdk/docs/authorizing#run_gcloud_init).
@@ -245,6 +247,10 @@ This container supports both: [Authorize with a service account](https://cloud.g
    ```
 
    **NOTE:** The Active Configuration for the Google Cloud SDK will be **`default`**. Changing to, and using a different Active Configuration, is out of scope for this documentation and not necessary. Advanced users can change this, if preferred.
+
+#### **Issues**
+
+If you have any issues related to running the container with `gcloud` please [Open an Issue](https://github.com/jmcombs/acme.sh-gcloud/issues). All other issues will be closed and referred to the original `acme.sh` Isssues.
 
 #### **Backlog**
 
