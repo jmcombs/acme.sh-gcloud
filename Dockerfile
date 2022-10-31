@@ -1,7 +1,3 @@
-FROM alpine/git AS builder
-
-RUN git clone https://github.com/acmesh-official/acme.sh.git /install_acme.sh/
-
 FROM alpine:latest
 
 RUN apk --no-cache add -f \
@@ -21,7 +17,7 @@ RUN apk --no-cache add -f \
   tar
 
 # Install Google Cloud SDK
-RUN curl -sSL https://sdk.cloud.google.com | bash > /dev/null
+RUN curl -sSL https://sdk.cloud.google.com | sh > /dev/null
 ENV PATH $PATH:/root/google-cloud-sdk/bin
 
 # Remove unncessary packages
@@ -33,9 +29,8 @@ ENV LE_CONFIG_HOME /acme.sh
 ARG AUTO_UPGRADE=1
 ENV AUTO_UPGRADE $AUTO_UPGRADE
 
-#Install acme.sh
-COPY --from=builder /install_acme.sh/* /install_acme.sh/
-RUN cd /install_acme.sh && ([ -f /install_acme.sh/acme.sh ] && /install_acme.sh/acme.sh --install || curl https://get.acme.sh | sh) && rm -rf /install_acme.sh/
+# Install acme.sh
+RUN curl https://get.acme.sh | sh 
 RUN ln -s  /root/.acme.sh/acme.sh  /usr/local/bin/acme.sh && crontab -l | grep acme.sh | sed 's#> /dev/null##' | crontab -
 
 RUN for verb in help \
