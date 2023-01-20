@@ -6,7 +6,7 @@ For those who wish to use the [Google Cloud DNS API](https://github.com/acmesh-o
 [![Docker Pulls](https://img.shields.io/docker/pulls/jmcombs/acme.sh-gcloud)](https://hub.docker.com/r/jmcombs/acme.sh-gcloud "Click to view the image on Docker Hub")
 [![Docker Stars](https://img.shields.io/docker/stars/jmcombs/acme.sh-gcloud)](https://hub.docker.com/r/jmcombs/acme.sh-gcloud "Click to view the image on Docker Hub")
 [![Github Issues](https://img.shields.io/github/issues/jmcombs/acme.sh-gcloud)](https://github.com/jmcombs/acme.sh-gcloud/issues "Click to view or open issues")
-[![Docker Image Size (Alpine)](https://img.shields.io/docker/image-size/jmcombs/acme.sh-gcloud/latest?logo=alpine%20linux)]
+![Docker Image Size (Alpine)](https://img.shields.io/docker/image-size/jmcombs/acme.sh-gcloud/latest?logo=alpine%20linux)
 
 ## How to Use
 
