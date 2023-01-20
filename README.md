@@ -2,10 +2,11 @@
 
 For those who wish to use the [Google Cloud DNS API](https://github.com/acmesh-official/acme.sh/wiki/dnsapi#49-use-google-cloud-dns-api-to-automatically-issue-cert) with [acme.sh](https://github.com/acmesh-official/acme.sh) running in a container environment, this is the container for you. This creates a Docker image with [Google Cloud SDK](https://cloud.google.com/sdk/) and [acme.sh](https://github.com/acmesh-official/acme.sh) installed and running on [Alpine Linux](https://hub.docker.com/_/alpine/). It is published for 32- and 64-bit `x86` and `ARM` architectures and, for those who use [Docker Swarm](https://docs.docker.com/engine/swarm/), it supports [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jmcombs/acme.sh-gcloud/build-publish.yml?logo=github)
 [![Docker Pulls](https://img.shields.io/docker/pulls/jmcombs/acme.sh-gcloud)](https://hub.docker.com/r/jmcombs/acme.sh-gcloud "Click to view the image on Docker Hub")
 [![Docker Stars](https://img.shields.io/docker/stars/jmcombs/acme.sh-gcloud)](https://hub.docker.com/r/jmcombs/acme.sh-gcloud "Click to view the image on Docker Hub")
-
 [![Github Issues](https://img.shields.io/github/issues/jmcombs/acme.sh-gcloud)](https://github.com/jmcombs/acme.sh-gcloud/issues "Click to view or open issues")
+[![Docker Image Size (Alpine)](https://img.shields.io/docker/image-size/jmcombs/acme.sh-gcloud/latest?logo=alpine%20linux)]
 
 ## How to Use
 
@@ -250,8 +251,4 @@ This container supports both: [Authorize with a service account](https://cloud.g
 
 #### **Issues**
 
-If you have any issues related to running the container with `gcloud` please [Open an Issue](https://github.com/jmcombs/acme.sh-gcloud/issues). All other issues will be closed and referred to the original `acme.sh` Isssues.
-
-#### **Backlog**
-
-1. Automating Docker Image builds when releases are pushed to either `acme.sh` or Google Cloud SDK repos
+If you have any issues related to running the container with `gcloud` please [Open an Issue](https://github.com/jmcombs/acme.sh-gcloud/issues). All other issues will be closed and referred to [`acme.sh` Issues](https://github.com/acmesh-official/acme.sh/issues).
